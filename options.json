@@ -1,0 +1,24 @@
+{
+    "id":"kafka-workload",
+    "mem":512,
+    "container":{
+        "type":"MESOS",
+        "docker":{
+            "image":"rishabh96b/kafka-workload:2.4.0",
+            "forcePullImage":true
+        }
+    },
+    "networks":[
+        {
+            "mode":"host"
+        }
+    ],
+    "env":{
+        "JVM_MaxHeapSize":"512",
+        "KAFKA_CLIENT_MODE":"test",
+        "KAFKA_TOPIC":"securetest",
+        "NUM_TOPICS": 30,
+        "NUM_RECORDS": 1000,
+        "BOOTSTRAP_SERVERS": "zookeeper-0-server.data-serviceskafka-zookeeper.autoip.dcos.thisdcos.directory:1140,zookeeper-1-server.data-serviceskafka-zookeeper.autoip.dcos.thisdcos.directory:1140,zookeeper-2-server.data-serviceskafka-zookeeper.autoip.dcos.thisdcos.directory:1140",
+    }
+}
