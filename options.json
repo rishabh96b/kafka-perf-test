@@ -17,8 +17,12 @@
         "JVM_MaxHeapSize":"512",
         "KAFKA_CLIENT_MODE":"test",
         "KAFKA_TOPIC":"securetest",
-        "NUM_TOPICS": 30,
-        "NUM_RECORDS": 1000,
-        "BOOTSTRAP_SERVERS": "zookeeper-0-server.data-serviceskafka-zookeeper.autoip.dcos.thisdcos.directory:1140,zookeeper-1-server.data-serviceskafka-zookeeper.autoip.dcos.thisdcos.directory:1140,zookeeper-2-server.data-serviceskafka-zookeeper.autoip.dcos.thisdcos.directory:1140",
-    }
+        "NUM_TOPICS": "30",
+        "NUM_RECORDS": "1000",
+        "RECORD_SIZE": "50",
+        "PRODUCER_THROUGHPUT": "10",
+        "TEST_INTERVAL_SECONDS": "5",
+        "BOOTSTRAP_SERVERS": "broker.kafka.l4lb.thisdcos.directory:9092"
+    },
+    "cmd": "/opt/kafka/producer_test.sh"
 }
