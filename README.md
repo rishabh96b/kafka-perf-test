@@ -17,19 +17,19 @@ Set the necessary environment variables.
 - For Kubernetes, use `deployment.yaml`
 - For local system, set the vars manually inside the docker container using:
 	- ```bash
-	docker run -it rishabh96b/kafka-workload:latest bash
-	export NUM_TOPICS=30
-	export NUM_RECORDS=1024
-	export RECORD_SIZE=50
-	export PRODUCER_THROUGHPUT=10
-	export TEST_INTERVAL_SECONDS=5
-	export BOOTSTRAP_SERVERS="http://localhost:9092"
+		docker run -it rishabh96b/kafka-workload:latest bash
+		export NUM_TOPICS=30
+		export NUM_RECORDS=1024
+		export RECORD_SIZE=50
+		export PRODUCER_THROUGHPUT=10
+		export TEST_INTERVAL_SECONDS=5
+		export BOOTSTRAP_SERVERS="http://localhost:9092"
 	```
-To run producer benchmarks, run:
+To run Producer benchmarks:
 ```bash
 ./producer_test.sh
 ```
-To run consumer benchmarks, run:
+To run Consumer benchmarks:
 ```bash
 ./consumer_test.sh
 ```
