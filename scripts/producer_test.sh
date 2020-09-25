@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-
-
 ./generate_endpoints.sh
 
 while [[ true ]]
