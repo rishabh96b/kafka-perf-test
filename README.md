@@ -26,7 +26,6 @@ Set the necessary environment variables.
 		export TEST_INTERVAL_SECONDS=5
 		export BOOTSTRAP_SERVERS="http://localhost:9092"
 	```
-
 To run Producer benchmarks:
 ```bash
 ./producer_test.sh
