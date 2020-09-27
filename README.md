@@ -1,5 +1,5 @@
 # Kafka Performance Tester
-==========================
+
 [![CircleCI](https://circleci.com/gh/rishabh96b/kafka-perf-test.svg?style=svg)](https://circleci.com/gh/rishabh96b/kafka-perf-test)
 
 ### Introduction ###
